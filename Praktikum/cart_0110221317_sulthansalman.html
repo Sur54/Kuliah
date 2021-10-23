@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cart | Sulthan Salman</title>
+        <style>
+        .nav{
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            gap: 20px;
+            margin-left: auto;
+        }
+        .isi{
+            display: flex;
+            gap: 50px;
+            justify-content: space-between;
+        }
+        .hasil{
+            display: flex;
+            justify-content: space-between ;
+            margin-top: -10px;
+        }
+        #halaman{
+            border: 2px solid black;
+        }
+        #atas{
+            border-bottom: 2px solid black;
+            background-color: blanchedalmond;
+        }
+        #kiri{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #kanan{
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: burlywood;
+        }
+        #tombol{
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            height: 40px;
+            width: 300px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+        #bawah{
+            border-top: 2px solid black;
+            padding-top: 10px;
+            background-color: blanchedalmond;
+        }
+        #subscribebutton{
+            background-color: burlywood;
+            padding: px;
+        }
+        </style>
+    </head>
+    <body id="halaman">
+        <header id="atas">
+            <nav class="nav" id="header">
+                &emsp;<b>MaShirt.com</b>
+                <ul class="nav" style="gap: 25px;">
+                    <li><a href="/">Home</a></li><li>|</li>
+                    <li><a href="/">Catalogue</a></li><li>|</li>
+                    <li><a href="/">Best Offer</a></li><li>|</li>
+                    <li><a href="/">Become Reseller</a></li><li>|</li>
+                    <li><a href="/">About</a></li>
+                </ul>
+                <ul class="nav">
+                    <li><img src="assets/img/search.png" height="25px" alt="search"></li>
+                    <li><img src="assets/img/trolley.png" height="25px" alt="trolley"></li>
+                    <li><b>Cart (1)</b></li>&emsp;
+                </ul>
+            </nav>
+        </header>
+
+        <div class="isi">
+            <div id="kiri">
+                <h2>Your Cart</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="assets/img/tshirt.jpg" height="200px" alt="tshirt"></td>
+                            <td><b>$20.00</b></td>
+                            <td>
+                                &emsp;&emsp;<select name="quantity" size="1">
+                                    <option>1</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Subtotal: $20.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="kanan">
+                <h3>Summary (1 item)</h3>
+                <div class="hasil">
+                    <p>Subtotal</p>
+                    <p>$20.00</p>
+                </div>
+                <div class="hasil">
+                    <p>Shipping</p>
+                    <p>-</p>
+                </div>
+                <div class="hasil">
+                    <p>Est. Taxes</p>
+                    <p>-</p>
+                </div>
+                <hr>
+                <div class="hasil">
+                    <p>Total</p>
+                    <p><b>$20.00</b></p>
+                </div>
+                <button id="tombol">
+                    <b><a href="checkout.html">Checkout</a></b>
+                </button>
+            </div>
+        </div>
+        <footer id="bawah">
+            <div class="nav" id="topfooter">
+                &emsp;<b>MaShirt.com</b> 
+                <ul class="nav" style="gap: 25px;">
+                    <li><a href="/">Shirt</a></li><li>|</li>
+                    <li><a href="/">Pants</a></li><li>|</li>
+                    <li><a href="/">Shoes</a></li><li>|</li>
+                    <li><a href="/">Merchandises</a></li><li>|</li>
+                    <li><a href="/">More...</a></li>
+                </ul>
+                <b style="margin-left: auto;">Stay In Touch! Join our Newsletter.</b>&emsp;
+            </div>
+            <div class="nav" id="bottomfooter">
+                &emsp;<img src="assets/img/visa.png" height="15px" alt="visa">
+                <img src="assets/img/mastercard.png" height="15px" alt="mastercard">
+                <div class="nav" id="subscribe">
+                    <input type="text" placeholder="Enter Email"/>
+                    <p id="subscribebutton">Subscribe</p>&emsp;
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
