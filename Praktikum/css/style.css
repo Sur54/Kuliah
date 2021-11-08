@@ -1,0 +1,25 @@
+body{
+    padding: 5px;
+    border: 5px solid black;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+#gambar{
+    border: 5px solid black;
+}
+img{
+    width: 250px;
+    height: 250px;
+}
+article{
+    padding: 5px;
+}
+#attachment{
+    display: flex;
+    justify-content: space-around;
+}
+#audio{
+    display:table-row
+}
