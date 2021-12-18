@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript_Praktikum3 | Sulthan Salman</title>
+</head>
+
+<body>
+    <h3>Menghitung Biaya Parkir</h3>
+    <label for="masuk">Jam Berapa Anda Masuk Parkir:</label><br>
+    <input type="number" id="masuk" value="" size="2"><br>
+    <label for="keluar">Jam Berapa Anda Keluar Parkir:</label><br>
+    <input type="number" id="keluar" value="" size="2"><br>
+    <button onclick="hasil()">Hitung Biaya</button><br>
+    <span id="hasil"> </span>
+
+    <script>
+        function hasil() {
+            const awal = 3000;
+            const lebih = 1000;
+            let masuk, keluar, lama, biaya, hasil;
+            masuk = document.getElementById("masuk").value;
+            keluar = document.getElementById("keluar").value;
+            lama = keluar - masuk
+            tambah = lama - 2
+            if (lama <= 2) {
+                biaya = awal
+            } else {
+                biaya = awal + tambah * lebih
+            }
+            hasil = document.getElementById("hasil");
+            hasil.innerHTML = "Lama parkir adalah " + lama + " jam <br>" +
+                "Tarif parkir sebesar Rp. " + biaya;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript_Praktikum2 | Sulthan Salman</title>
+</head>
+
+<body>
+    <h3>Menghitung Kurs Rupiah ke Dollar</h3>
+    <label for="rp">Masukkan Nilai Rupiah:</label><br>
+    <input type="number" id="rp" value="" size="20"><br>
+    <button onclick="hasil()">Tukar Kurs</button><br>
+    <span id="hasil"> </span>
+
+    <script>
+        function hasil() {
+            const dollar = 14650;
+            let rp, kurs, hasil;
+            rp = document.getElementById("rp").value;
+            kurs = rp / dollar;
+            hasil = document.getElementById("hasil");
+            hasil.innerHTML = "Rp. " + rp + " setara dengan $" + kurs;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript_Praktikum4 | Sulthan Salman</title>
+</head>
+
+<body>
+    <h3>Perkalian Sederhana</h3>
+    <input type="number" id="pertama" value="" size="10" onchange="hasil()"><br>
+    <h3>X</h3>
+    <input type="number" id="kedua" value="" size="10" onchange="hasil()"><br>
+    <h3>=</h3>
+    <span id="hasil"></span>
+
+    <script>
+        function hasil() {
+            let pertama, kedua, hasil;
+            pertama = document.getElementById("pertama").value;
+            kedua = document.getElementById("kedua").value;
+            jumlah = pertama * kedua;
+            hasil = document.getElementById("hasil");
+            hasil.innerHTML = jumlah;
+        }
+    </script>
+
+</body>
+
+</html>

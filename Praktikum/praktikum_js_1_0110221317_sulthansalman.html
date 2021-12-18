@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript_Praktikum1 | Sulthan Salman</title>
+</head>
+
+<body>
+    <h3>Menghitung luas dan keliling Lingkaran</h3>
+    <label for="jari2">Masukkan Jari-Jari Lingkaran:</label><br>
+    <input id="jari2" type="number" value="" size="10" /><br>
+    <button onclick="hasil()">Hitung</button><br>
+    <span id="hasil"> </span>
+
+    <script>
+        function hasil() {
+            const pi = 3.14;
+            let jari2, luas, keliling, hasil;
+            jari2 = document.getElementById("jari2").value;
+            luas = pi * jari2 * jari2;
+            keliling = 2 * pi * jari2;
+            hasil = document.getElementById("hasil");
+            hasil.innerHTML =
+                "Luas lingkaran dengan jari-jari " + jari2 + " cm adalah " + luas + " cm </br>" +
+                "Keliling lingkaran dengan jari-jari " + jari2 + " cm adalah " + keliling + " cm";
+            return keliling - luas;
+        }
+    </script>
+</body>
+
+</html>
