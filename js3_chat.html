@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JS 5 Soal | Chat System | Sulthan Salman</title>
+    <style>
+        #chat {
+            height: 300px;
+            width: 300px;
+            border: solid black 1px;
+            padding: 5px;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chat System</h1>
+    <form>
+        <ul id="chat">
+            <li>
+                <span>Happy New Year!</span><br>
+                <span>Welcome To Chat</span>
+            </li>
+        </ul>
+        <input type="text" name="message" id="message" required/>
+        <button onclick="sendMessage()" type="button">Kirim</button>
+    </form>
+</body>
+<script>
+    const message = document.getElementById('message');
+    const chatSection = document.getElementById('chat');
+
+    function sendMessage() {
+        let div1 = document.createElement('div');
+        div1.classList.add();
+
+        let div2 = document.createElement('div');
+        div2.classList.add()
+
+        let pesan = document.createElement('span');
+        pesan.classList.add()
+        pesan.innerHTML = message.value;
+
+        let waktu = document.createElement('span');
+        waktu.classList.add()
+        waktu.innerHTML = " 00:00";
+
+        div2.appendChild(pesan);
+        div2.appendChild(waktu);
+        div1.appendChild(div2);
+
+        chatSection.appendChild(div1);
+    }
+</script>
+
+</html>
